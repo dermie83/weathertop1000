@@ -1,0 +1,44 @@
+Reading(r1):
+  code: 300
+  temperature: 3.4
+  windSpeed: 4.2
+  pressure: 1001
+Reading(r2):
+  code: 400
+  temperature: 4.5
+  windSpeed: 5.1
+  pressure: 900
+Reading(r3):
+  code: 500
+  temperature: 5.6
+  windSpeed: 7.1
+  pressure: 1200
+Reading(r4):
+  code: 600
+  temperature: 6.6
+  windSpeed: 3.3
+  pressure: 1100
+Reading(r5):
+  code: 700
+  temperature: 7.4
+  windSpeed: 4.3
+  pressure: 1001
+Reading(r6):
+  code: 800
+  temperature: 8.2
+  windSpeed: 7.2
+  pressure: 1003
+
+Station(s1):
+  name: Tramore
+  readings:
+    - r1
+    - r2
+    - r3
+
+Station(s2):
+  name: Derry
+  readings:
+    - r4
+    - r5
+    - r6
