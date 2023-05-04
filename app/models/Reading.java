@@ -1,9 +1,10 @@
 package models;
 
 import javax.persistence.Entity;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import play.db.jpa.Model;
+
+import java.util.ArrayList;
+
 @Entity
 public class Reading extends Model
 {
@@ -12,11 +13,6 @@ public class Reading extends Model
     public double windSpeed;
     public int pressure;
     public String timeStamp;
-
-//    Date date = new Date();
-//    SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy h:mm:ss a");
-//    String timeStamp = sdf.format(date);
-
 
     public Reading(String timeStamp, int code, double temperature, double windSpeed, int pressure)
     {
@@ -27,4 +23,5 @@ public class Reading extends Model
         this.windSpeed = windSpeed;
         this.pressure = pressure;
     }
+
 }

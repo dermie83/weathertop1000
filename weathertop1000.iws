@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b20f9aa8-6b65-4c43-8c39-5609b55bff95" name="Changes" comment="TimeStamp field added to Reading Class" />
+    <list default="true" id="b20f9aa8-6b65-4c43-8c39-5609b55bff95" name="Changes" comment="TimeStamp field added to Reading Class">
+      <change beforePath="$PROJECT_DIR$/Template_1001$_run_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Template_1001$_run_closure1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1001.class" beforeDir="false" afterPath="$PROJECT_DIR$/Template_1001.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1003$_run_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Template_1003$_run_closure1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1003.class" beforeDir="false" afterPath="$PROJECT_DIR$/Template_1003.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/StationCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/StationCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Reading.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Reading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Station.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Admin" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Admin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.StationCtrl" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.StationCtrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Reading" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Reading" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Station" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Station" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/StationCtrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/StationCtrl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/models/Reading.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/models/Reading.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weathertop1000.iws" beforeDir="false" afterPath="$PROJECT_DIR$/weathertop1000.iws" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,21 +54,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/dermi/weather-top-inc-v1&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/dermi/DVDLibraryV2.0",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,6 +79,7 @@
       <updated>1683044543447</updated>
       <workItem from="1683044546341" duration="5435000" />
       <workItem from="1683061360045" duration="2224000" />
+      <workItem from="1683132287347" duration="9435000" />
     </task>
     <task id="LOCAL-00001" summary="TimeStamp field added to Reading Class">
       <created>1683063596734</created>
@@ -69,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683063596734</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="TimeStamp field added to Reading Class">
+      <created>1683132303897</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683132303897</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
