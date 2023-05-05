@@ -7,7 +7,6 @@ import play.mvc.Controller;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
 
 public class StationCtrl extends Controller {
 
@@ -33,7 +32,7 @@ public class StationCtrl extends Controller {
     public static void addReading(Long id, String timeStamp, int code, double temperature, double windSpeed, int pressure)
     {
         Date date = new Date();
-        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy h:mm:ss a");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy h:mm:ss a");
         String formattedDate = sdf.format(date);
         Reading reading = new Reading(formattedDate, code, temperature, windSpeed, pressure);
         Station station = Station.findById(id);
@@ -41,4 +40,6 @@ public class StationCtrl extends Controller {
         station.save();
         redirect ("/station/" + id);
     }
+
+
 }

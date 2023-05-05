@@ -3,8 +3,6 @@ package models;
 import javax.persistence.Entity;
 import play.db.jpa.Model;
 
-import java.util.ArrayList;
-
 @Entity
 public class Reading extends Model
 {
@@ -23,5 +21,6 @@ public class Reading extends Model
         this.windSpeed = windSpeed;
         this.pressure = pressure;
     }
+
 
 }
