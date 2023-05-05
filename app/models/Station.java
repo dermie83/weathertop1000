@@ -20,39 +20,39 @@ public class Station extends Model
     public Station(String name)
     {
         this.name = name;
-
     }
 
     public String getLatestTimestamp() {
-        String timestamp = readings.get(readings.size() - 1).timeStamp;
-        return timestamp;
+                String timestamp = readings.get(readings.size() - 1).timeStamp;
+             return timestamp;
     }
 
     public int getLatestCode() {
-        int code = readings.get(readings.size() - 1).code;
-        return code;
+                int code = readings.get(readings.size() - 1).code;
+            return code;
     }
-
-    public String getLatestCodeToText() {
-        int number = readings.get(readings.size() - 1).code;
-        String codeText = Conversion.convertCodeToText(number);
-        return codeText;
-    }
-
 
     public double getLatestTemp() {
-        double temp = readings.get(readings.size() - 1).temperature;
-        return temp;
+                double temp = readings.get(readings.size() - 1).temperature;
+            return temp;
     }
 
     public double getLatestWind() {
-        double wind = readings.get(readings.size() - 1).windSpeed;
-        return wind;
+                double wind = readings.get(readings.size() - 1).windSpeed;
+            return wind;
+
     }
 
     public int getLatestPressure() {
         int pressure = readings.get(readings.size() - 1).pressure;
-        return pressure;
+            return pressure;
+    }
+
+    public String getLatestCodeToText() {
+            int number = readings.get(readings.size() - 1).code;
+            String codeToText = Conversion.convertCodeToText(number);
+            return codeToText;
+
     }
 
 
