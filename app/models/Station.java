@@ -49,11 +49,31 @@ public class Station extends Model
     }
 
     public String getLatestCodeToText() {
-            int number = readings.get(readings.size() - 1).code;
-            String codeToText = Conversion.convertCodeToText(number);
+            int codeNumber = getLatestCode();
+            String codeToText = Conversions.convertCodeToText(codeNumber);
             return codeToText;
-
     }
+
+    public double getLatestConvertTemp() {
+        double temp = getLatestTemp();
+        double tempToText = Conversions.convertTemp(temp);
+        return tempToText;
+    }
+
+    public int getLatestWindToBeaufort() {
+        double wind = getLatestWind();
+        double windToBeaufort = Conversions.convertWindSpeedToBeaufortIndex(wind);
+        return (int) windToBeaufort;
+    }
+
+    public String getLatestBeaufortToText() {
+        int bft = getLatestWindToBeaufort();
+        String bftToText = Conversions.convertBFTCodeToText(bft);
+        return bftToText;
+    }
+
+
+
 
 
 }

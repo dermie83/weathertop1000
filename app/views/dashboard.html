@@ -27,19 +27,20 @@
       </div>
       <div class="column is-long">
         <p class="bd-notification is-primary">
-          <code class="html">${station.getLatestTemp()}</code><br>
-          The Fourth Column
+          <code class="html">${station.getLatestTemp()} C</code><br>
+          ${station.getLatestConvertTemp()} F
         </p>
       </div>
       <div class="column is-long">
         <p class="bd-notification is-primary">
-          <code class="html">${station.getLatestWind()}</code><br>
-          Fifth Column
+          <code class="html">${station.getLatestWind()} </code><br>
+
+          ${station.getLatestBeaufortToText()}
         </p>
       </div>
       <div class="column is-long">
         <p class="bd-notification is-primary">
-          <code class="html">${station.getLatestPressure()}</code><br>
+          <code class="html">${station.getLatestPressure()} hpa</code><br>
           Sixth Column
         </p>
       </div>

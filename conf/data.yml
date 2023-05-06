@@ -24,13 +24,13 @@ Reading(r4):
   timeStamp: 05/05/2023 3:57:52 p.m.
 Reading(r5):
   code: 700
-  temperature: 7.4
+  temperature: 73.4
   windSpeed: 4.3
   pressure: 1001
   timeStamp: 05/05/2023 3:57:52 p.m.
 Reading(r6):
   code: 800
-  temperature: 8.2
+  temperature: 8.0
   windSpeed: 7.2
   pressure: 1003
   timeStamp: 05/05/2023 3:57:52 p.m.
