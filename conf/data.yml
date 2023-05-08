@@ -2,36 +2,42 @@ Reading(r1):
   code: 300
   temperature: 3.4
   windSpeed: 4.2
+  windDirection: 100
   pressure: 1001
   timeStamp: 05/05/2023 3:57:52 p.m.
 Reading(r2):
   code: 400
   temperature: 4.5
   windSpeed: 5.1
+  windDirection: 200
   pressure: 900
   timeStamp: 05/05/2023 3:57:52 p.m.
 Reading(r3):
   code: 500
   temperature: 5.6
   windSpeed: 7.1
+  windDirection: 300
   pressure: 1200
   timeStamp: 05/05/2023 3:57:52 p.m.
 Reading(r4):
   code: 600
   temperature: 6.6
   windSpeed: 3.3
+  windDirection: 400
   pressure: 1100
   timeStamp: 05/05/2023 3:57:52 p.m.
 Reading(r5):
   code: 700
   temperature: 73.4
   windSpeed: 4.3
+  windDirection: 500
   pressure: 1001
   timeStamp: 05/05/2023 3:57:52 p.m.
 Reading(r6):
   code: 800
   temperature: 8.0
   windSpeed: 7.2
+  windDirection: 600
   pressure: 1003
   timeStamp: 05/05/2023 3:57:52 p.m.
 

@@ -6,7 +6,7 @@ public class Conversions {
 
     }
 
-    public static String convertCodeToText(int number) {
+    public static String convertWeatherCodeToText(int number) {
 
         switch (number) {
             case 100:
@@ -129,9 +129,90 @@ public class Conversions {
             case 11:
                 return "Violent Storm";
             case -1:
-                return "Not bft Code";
+                return "Incorrect bft Code";
             default:
                 return "No bft Code";
+        }
+
+    }
+
+    public static double calculateWindChill(double celsiusTemp, double windSpeed){
+        double windChill;
+        windChill = (13.12 +(0.6215*(celsiusTemp)))-
+                (11.37*(Math.pow(windSpeed,0.16))+(0.3965*(celsiusTemp)*(Math.pow(windSpeed,0.16))));
+        return toTwoDecimalPlaces(windChill);
+    }
+
+    public static String convertWindDirectionToText(double windDirection) {
+
+        if (((windDirection >= 0) && (windDirection <= 11.25))
+            && ((windDirection > 348.75) && (windDirection < 360.00)))
+        {
+            return "N";
+        }
+        else if ((windDirection > 11.25) && (windDirection <= 33.75))
+        {
+            return "NNE";
+        }
+        else if ((windDirection > 33.75) && (windDirection <= 56.25))
+        {
+            return "NE";
+        }
+        else if ((windDirection > 56.25) && (windDirection <= 78.75))
+        {
+            return "ENE";
+        }
+        else if ((windDirection > 78.75) && (windDirection <= 101.25))
+        {
+            return "E";
+        }
+        else if ((windDirection > 101.25) && (windDirection <= 123.25))
+        {
+            return "ESE";
+        }
+        else if ((windDirection > 123.25) && (windDirection <= 146.25))
+        {
+            return "SE";
+        }
+        else if ((windDirection > 146.25) && (windDirection <= 168.75))
+        {
+            return "SSE";
+        }
+        else if ((windDirection > 168.75) && (windDirection <= 191.25))
+        {
+            return "S";
+        }
+        else if ((windDirection > 191.25) && (windDirection <= 213.75))
+        {
+            return "SSW";
+        }
+        else if ((windDirection > 213.75) && (windDirection <= 236.25))
+        {
+            return "SW";
+        }
+        else if ((windDirection > 236.25) && (windDirection <= 258.75))
+        {
+            return "WSW";
+        }
+        else if ((windDirection > 258.75) && (windDirection <= 281.25))
+        {
+            return "W";
+        }
+        else if ((windDirection > 281.25) && (windDirection <= 303.75))
+        {
+            return "WNW";
+        }
+        else if ((windDirection > 303.75) && (windDirection <= 326.25))
+        {
+            return "NW";
+        }
+        else if ((windDirection > 326.25) && (windDirection <= 348.75))
+        {
+            return "NNW";
+        }
+        else
+        {
+            return " ";
         }
 
     }

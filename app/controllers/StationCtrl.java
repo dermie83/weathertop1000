@@ -29,12 +29,13 @@ public class StationCtrl extends Controller {
 
     }
 
-    public static void addReading(Long id, String timeStamp, int code, double temperature, double windSpeed, int pressure)
+    public static void addReading(Long id, String timeStamp, int code, double temperature,
+                                  double windSpeed, int windDirection, int pressure)
     {
         Date date = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy h:mm:ss a");
         String formattedDate = sdf.format(date);
-        Reading reading = new Reading(formattedDate, code, temperature, windSpeed, pressure);
+        Reading reading = new Reading(formattedDate, code, temperature, windSpeed, windDirection, pressure);
         Station station = Station.findById(id);
         station.readings.add(reading);
         station.save();

@@ -27,7 +27,7 @@ public class Station extends Model
              return timestamp;
     }
 
-    public int getLatestCode() {
+    public int getLatestWeatherCode() {
                 int code = readings.get(readings.size() - 1).code;
             return code;
     }
@@ -43,14 +43,20 @@ public class Station extends Model
 
     }
 
+    public double getLatestWindDirection() {
+        double windDirection = readings.get(readings.size() - 1).windDirection;
+        return windDirection;
+
+    }
+
     public int getLatestPressure() {
         int pressure = readings.get(readings.size() - 1).pressure;
             return pressure;
     }
 
-    public String getLatestCodeToText() {
-            int codeNumber = getLatestCode();
-            String codeToText = Conversions.convertCodeToText(codeNumber);
+    public String getLatestWeatherCodeToText() {
+            int codeNumber = getLatestWeatherCode();
+            String codeToText = Conversions.convertWeatherCodeToText(codeNumber);
             return codeToText;
     }
 
@@ -60,10 +66,24 @@ public class Station extends Model
         return tempToText;
     }
 
+    public double getLatestWindChill() {
+        double latestTemp = getLatestTemp();
+        double latestWindSpeed = getLatestWind();
+        double windChillTemp = Conversions.calculateWindChill(latestTemp, latestWindSpeed);
+        return windChillTemp;
+    }
+
+
     public int getLatestWindToBeaufort() {
         double wind = getLatestWind();
         double windToBeaufort = Conversions.convertWindSpeedToBeaufortIndex(wind);
         return (int) windToBeaufort;
+    }
+
+    public String getLatestWindDirectionToText() {
+        double windDirection = getLatestWindDirection();
+        String windDirectionToText = Conversions.convertWindDirectionToText(windDirection);
+        return windDirectionToText;
     }
 
     public String getLatestBeaufortToText() {

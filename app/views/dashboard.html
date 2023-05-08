@@ -10,38 +10,41 @@
       <div class="column is-long">
         <p class="bd-notification is-primary">
           <code class="html">${station.name}</code><br>
-          First Column
         </p>
       </div>
       <div class="column is-long">
         <p class="bd-notification is-primary">
-          <code class="html">${station.getLatestTimestamp()}</code><br>
-          Our Second Column
+          <code class="html">Date/Time</code><br>
+          ${station.getLatestTimestamp()}
         </p>
       </div>
       <div class="column is-long">
         <p class="bd-notification is-primary">
-          <code class="html">${station.getLatestCode()}</code><br>
-          ${station.getLatestCodeToText()}
+          <code class="html">Weather</code><br>
+          ${station.getLatestWeatherCodeToText()}
         </p>
       </div>
       <div class="column is-long">
         <p class="bd-notification is-primary">
-          <code class="html">${station.getLatestTemp()} C</code><br>
+          <code class="html">Temp</code><br>
+          ${station.getLatestTemp()} C<br>
           ${station.getLatestConvertTemp()} F
         </p>
       </div>
       <div class="column is-long">
         <p class="bd-notification is-primary">
-          <code class="html">${station.getLatestWind()} </code><br>
-
-          ${station.getLatestBeaufortToText()}
+          <code class="html">Wind</code><br>
+          ${station.getLatestWindToBeaufort()} bft<br>
+          ${station.getLatestBeaufortToText()}<br>
+          ${station.getLatestWindDirectionToText()}<br>
+          Feels like<br>
+          ${station.getLatestWindChill()} C<br>
         </p>
       </div>
       <div class="column is-long">
         <p class="bd-notification is-primary">
-          <code class="html">${station.getLatestPressure()} hpa</code><br>
-          Sixth Column
+          <code class="html">Pressure</code><br>
+          ${station.getLatestPressure()} hpa
         </p>
       </div>
     </div>
