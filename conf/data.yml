@@ -43,6 +43,8 @@ Reading(r6):
 
 Station(s1):
   name: Tramore
+  lat: 129.222222
+  lng: -7.343333
   readings:
     - r1
     - r2
@@ -50,6 +52,8 @@ Station(s1):
 
 Station(s2):
   name: Derry
+  lat: 160.234344
+  lng: -3.348484
   readings:
     - r4
     - r5

@@ -128,12 +128,9 @@ public class Conversions {
                 return "Strong Storm";
             case 11:
                 return "Violent Storm";
-            case -1:
-                return "Incorrect bft Code";
             default:
-                return "No bft Code";
+                return "No wind conditions";
         }
-
     }
 
     public static double calculateWindChill(double celsiusTemp, double windSpeed){
@@ -212,7 +209,7 @@ public class Conversions {
         }
         else
         {
-            return " ";
+            return "No Wind Direction";
         }
 
     }

@@ -13,13 +13,17 @@ import play.db.jpa.Model;
 public class Station extends Model
 {
     public String name;
+    public float lat;
+    public float lng;
 
     @OneToMany(cascade = CascadeType.ALL)
     public List<Reading> readings = new ArrayList<>();
 
-    public Station(String name)
+    public Station(String name, float lat, float lng)
     {
         this.name = name;
+        this.lat = lat;
+        this.lng = lng;
     }
 
     public String getLatestTimestamp() {

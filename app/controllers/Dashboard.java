@@ -24,9 +24,9 @@ public class Dashboard extends Controller
     redirect("/dashboard");
   }
 
-  public static void addStation(String name)
+  public static void addStation(String name, float lat, float lng)
   {
-    Station station = new Station (name);
+    Station station = new Station (name, lat, lng);
     Logger.info ("Adding a new Weather Station called " + name);
     station.save();
     redirect ("/dashboard");
