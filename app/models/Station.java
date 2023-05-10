@@ -1,6 +1,8 @@
 package models;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -96,8 +98,27 @@ public class Station extends Model
         return bftToText;
     }
 
+    public double getMaxTemp(){
+        double maxTemp = readings.get(0).temperature;
+        for (int i = 1; i < readings.size(); i++) {
+            if (maxTemp < readings.get(i).temperature)
+                maxTemp = readings.get(i).temperature;
+        }
+//        System.out.println("Maximum Temp in ArrayList = "
+//                + maxTemp);
+        return maxTemp;
 
+        }
 
+    public double getMinTemp(){
+        double minTemp = readings.get(0).temperature;
+        for (int i = 1; i < readings.size(); i++) {
+            if (minTemp > readings.get(i).temperature)
+                minTemp = readings.get(i).temperature;
+        }
+        return minTemp;
+
+    }
 
 
 }

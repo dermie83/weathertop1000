@@ -30,7 +30,9 @@
         <p class="bd-notification is-primary">
           <code class="html">Temp</code><br>
           ${station.getLatestTemp()} C<br>
-          ${station.getLatestConvertTemp()} F
+          ${station.getLatestConvertTemp()} F <br>
+          Max: ${station.getMaxTemp()} C <br>
+          Min: ${station.getMinTemp()} C
         </p>
       </div>
       <div class="column is-long">
@@ -45,7 +47,7 @@
       <div class="column is-long">
         <p class="bd-notification is-primary">
           <code class="html">Pressure</code><br>
-          ${station.getLatestPressure()} hpa
+          ${station.getLatestPressure()} hPa
         </p>
       </div>
     </div>

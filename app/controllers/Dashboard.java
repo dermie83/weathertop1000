@@ -1,9 +1,8 @@
 package controllers;
-
-import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import models.Station;
-import models.Reading;
 import play.Logger;
 import play.mvc.Controller;
 
@@ -12,6 +11,12 @@ public class Dashboard extends Controller
   public static void index() {
     Logger.info("Rendering Dashboard");
     List<Station> stations = Station.findAll();
+    Collections.sort(stations, new Comparator<Station>() {
+      @Override
+      public int compare(Station o1, Station o2) {
+        return o1.name.compareTo(o2.name);
+      }
+    });
     render ("dashboard.html", stations);
   }
 
