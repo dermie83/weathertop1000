@@ -3,6 +3,10 @@
 
 #{menu id:"dashboard"/}
 
+<header class="title">
+  ${member.firstname} ${member.lastname}'s Station List
+</header>
+
 #{list items:stations, as:'station'}
   #{if station.readings.size() > 0}
   <div class="content box">
@@ -54,7 +58,7 @@
       <a href="/station/${station.id}" class="icon has-text-primary">
         <i class="fas fa-folder"></i>
       </a>
-      <a href="/dashboard/deleteStation/${station.id}" class="icon has-text-danger">
+      <a href="/dashboard/${member.id}/deleteStation/${station.id}" class="icon has-text-danger">
         <i class="fas fa-trash"></i>
       </a>
       </a>

@@ -9,16 +9,16 @@ GET     /about                                  About.index
 GET     /admin                                  Admin.index
 GET     /station/{id}                           StationCtrl.index
 GET     /station/{id}/deleteReading/{readingID} StationCtrl.deleteReading
-GET     /dashboard/deleteStation/{id}           Dashboard.deleteStation
+GET     /dashboard/{id}/deleteStation/{stationid}           Dashboard.deleteStation
 GET     /signup                                 Accounts.signup
 GET     /login                                  Accounts.login
-GET    /logout                                  Accounts.logout
+GET     /logout                                 Accounts.logout
 
 
 POST    /station/{id}/addreading                StationCtrl.addReading
 POST    /dashboard/addstation                   Dashboard.addStation
-POST   /register                                Accounts.register
-POST   /authenticate                            Accounts.authenticate
+POST    /register                               Accounts.register
+POST    /authenticate                           Accounts.authenticate
 
 
 
