@@ -9,52 +9,82 @@
 
 #{list items:stations, as:'station'}
   #{if station.readings.size() > 0}
-  <div class="content box">
-    <div class="columns is-mobile is-multiline is-centered">
-      <div class="column is-long">
-        <p class="bd-notification is-primary">
-          <code class="html">${station.name}</code><br>
-          lat : ${station.lat}<br>
-          lng : ${station.lng}
-        </p>
-      </div>
-      <div class="column is-long">
-        <p class="bd-notification is-primary">
-          <code class="html">Date/Time</code><br>
-          ${station.getLatestTimestamp()}
-        </p>
-      </div>
-      <div class="column is-long">
-        <p class="bd-notification is-primary">
-          <code class="html">Weather</code><br>
-          ${station.getLatestWeatherCodeToText()}
-        </p>
-      </div>
-      <div class="column is-long">
-        <p class="bd-notification is-primary">
-          <code class="html">Temp</code><br>
-          ${station.getLatestTemp()} C<br>
-          ${station.getLatestConvertTemp()} F <br>
-          Max: ${station.getMaxTemp()} C <br>
+  <div class="tile is-ancestor">
+    <div class="tile is-parent">
+      <article class="tile is-child box">
+        <span class="icon-text has-text-info">
+        <span class="icon is-large fas fa-2x">
+        <i class="fas fa-location"></i>
+        </span>
+        </span>
+        <p class="title">${station.name}</p><br>
+        <p class="subtitle">Lat: ${station.lat}<br>
+          Lng: &{station.lng}</p>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child box">
+        <span class="icon-text has-text-info">
+        <span class="icon is-large fas fa-2x">
+        <i class="fas fa-clock"></i>
+        </span>
+        </span>
+        <p class="title">Date/Time</p><br>
+        <p class="subtitle">${station.getLatestTimestamp()}</p>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child box">
+        <span class="icon-text has-text-info">
+        <span class="icon is-large fas fa-2x">
+        <i class="fas fa-cloud"></i>
+        </span>
+        </span>
+        <p class="title">Weather</p><br>
+        <p class="subtitle">${station.getLatestWeatherCodeToText()}</p>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child box">
+        <span class="icon-text has-text-info">
+        <span class="icon is-large fas fa-2x">
+        <i class="fas fa-info-circle"></i>
+        </span>
+        </span>
+        <p class="title">Temp</p><br>
+        <p class="subtitle"> ${station.getLatestTemp()} C<br>
+          ${station.getLatestConvertTemp()} F<br>
+          Max: ${station.getMaxTemp()} C<br>
           Min: ${station.getMinTemp()} C
         </p>
-      </div>
-      <div class="column is-long">
-        <p class="bd-notification is-primary">
-          <code class="html">Wind</code><br>
-          ${station.getLatestBeaufortToText()}<br>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child box">
+        <span class="icon-text has-text-info">
+        <span class="icon is-large fas fa-2x">
+        <i class="fas fa-wind"></i>
+        </span>
+        </span>
+        <p class="title">Wind</p><br>
+        <p class="subtitle">${station.getLatestBeaufortToText()}<br>
           ${station.getLatestWindDirectionToText()}<br>
           Feels like<br>
-          ${station.getLatestWindChill()} C<br>
-        </p>
-      </div>
-      <div class="column is-long">
-        <p class="bd-notification is-primary">
-          <code class="html">Pressure</code><br>
-          ${station.getLatestPressure()} hPa
-        </p>
-      </div>
+          ${station.getLatestWindChill()} C</p>
+      </article>
     </div>
+    <div class="tile is-parent">
+      <article class="tile is-child box">
+        <span class="icon-text has-text-info">
+        <span class="icon is-large fas fa-2x">
+        <i class="fas fa-gauge"></i>
+        </span>
+        </span>
+        <p class="title">Pressure</p><br>
+        <p class="subtitle">${station.getLatestPressure()} hPa</p>
+      </article>
+    </div>
+  </div>
       <a href="/station/${station.id}" class="icon has-text-primary">
         <i class="fas fa-folder"></i>
       </a>

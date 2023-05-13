@@ -29,23 +29,23 @@ public class Station extends Model
     }
 
     public String getLatestTimestamp() {
-                String timestamp = readings.get(readings.size() - 1).timeStamp;
-             return timestamp;
+        String timestamp = readings.get(readings.size() - 1).timeStamp;
+        return timestamp;
     }
 
     public int getLatestWeatherCode() {
-                int code = readings.get(readings.size() - 1).code;
-            return code;
+        int code = readings.get(readings.size() - 1).code;
+        return code;
     }
 
     public double getLatestTemp() {
-                double temp = readings.get(readings.size() - 1).temperature;
-            return temp;
+        double temp = readings.get(readings.size() - 1).temperature;
+        return temp;
     }
 
     public double getLatestWind() {
-                double wind = readings.get(readings.size() - 1).windSpeed;
-            return wind;
+        double wind = readings.get(readings.size() - 1).windSpeed;
+        return wind;
 
     }
 
@@ -57,13 +57,13 @@ public class Station extends Model
 
     public int getLatestPressure() {
         int pressure = readings.get(readings.size() - 1).pressure;
-            return pressure;
+        return pressure;
     }
 
     public String getLatestWeatherCodeToText() {
-            int codeNumber = getLatestWeatherCode();
-            String codeToText = Conversions.convertWeatherCodeToText(codeNumber);
-            return codeToText;
+        int codeNumber = getLatestWeatherCode();
+        String codeToText = Conversions.convertWeatherCodeToText(codeNumber);
+        return codeToText;
     }
 
     public double getLatestConvertTemp() {
@@ -108,7 +108,7 @@ public class Station extends Model
 //                + maxTemp);
         return maxTemp;
 
-        }
+    }
 
     public double getMinTemp(){
         double minTemp = readings.get(0).temperature;
@@ -119,6 +119,14 @@ public class Station extends Model
         return minTemp;
 
     }
+
+//    public List<Reading> latestReading(int readingSize) {
+//        List<Reading> latestReadings = new ArrayList<Reading>();
+//        if (readings.size() > 0) {
+//            latestReadings = readings.subList(readings.size() - readingSize, readings.size());
+//        }
+//        return (latestReadings);
+//    }
 
 
 }
