@@ -3,7 +3,7 @@
 
 #{menu id:"dashboard"/}
 
-<header class="title">
+<header class="title is-capitalized">
   ${member.firstname} ${member.lastname}'s Station List
 </header>
 
@@ -24,7 +24,7 @@
     </div>
     <div class="tile is-parent">
       <article class="tile is-child box">
-        <span class="icon-text has-text-info">
+        <span class="icon-text has-text-dark">
         <span class="icon is-large fas fa-2x">
         <i class="fas fa-clock"></i>
         </span>
@@ -35,7 +35,7 @@
     </div>
     <div class="tile is-parent">
       <article class="tile is-child box">
-        <span class="icon-text has-text-info">
+        <span class="icon-text has-text-grey">
         <span class="icon is-large fas fa-2x">
         <i class="fas fa-cloud"></i>
         </span>
@@ -46,7 +46,7 @@
     </div>
     <div class="tile is-parent">
       <article class="tile is-child box">
-        <span class="icon-text has-text-info">
+        <span class="icon-text has-text-danger">
         <span class="icon is-large fas fa-2x">
         <i class="fas fa-info-circle"></i>
         </span>
@@ -61,7 +61,7 @@
     </div>
     <div class="tile is-parent">
       <article class="tile is-child box">
-        <span class="icon-text has-text-info">
+        <span class="icon-text has-text-warning">
         <span class="icon is-large fas fa-2x">
         <i class="fas fa-wind"></i>
         </span>
@@ -98,8 +98,8 @@
 <div class="container">
   <a href="/station/${station.id}">
     <div class="tags has-addons is-centered my-5">
-      <span class="tag has-background-danger is-large is-uppercase has-text-weight-bold has-text-white m-0">Station: ${station.name}, Has no Readings Recorded</span>
-      <span class="tag is-info is-large has-text-weight-bold is-uppercase has-text-weight-bold  has-text-white m-0">Click to Add A Reading</span>
+      <span class="tag has-background-danger is-medium is-uppercase has-text-weight-bold has-text-white m-0">Station: ${station.name}, Has no Readings Recorded</span>
+      <span class="tag is-info is-medium has-text-weight-bold is-uppercase has-text-weight-bold  has-text-white m-0">Click to Add A Reading</span>
     </div>
   </a>
 </div>
