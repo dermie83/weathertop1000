@@ -120,6 +120,26 @@ public class Station extends Model
 
     }
 
+    public int getMaxPressure(){
+        int maxPressure = readings.get(0).pressure;
+        for (int i = 1; i < readings.size(); i++) {
+            if (maxPressure < readings.get(i).pressure)
+                maxPressure = readings.get(i).pressure;
+        }
+        return maxPressure;
+
+    }
+
+    public int getMinPressure(){
+        int minPressure = readings.get(0).pressure;
+        for (int i = 1; i < readings.size(); i++) {
+            if (minPressure > readings.get(i).pressure)
+                minPressure = readings.get(i).pressure;
+        }
+        return minPressure;
+
+    }
+
 //    public List<Reading> latestReading(int readingSize) {
 //        List<Reading> latestReadings = new ArrayList<Reading>();
 //        if (readings.size() > 0) {

@@ -26,7 +26,7 @@ public class Conversions {
             case 800:
                 return "Thunder";
             default:
-                return "Non Code Number";
+                return "No Code Number";
         }
 
     }
@@ -135,15 +135,14 @@ public class Conversions {
 
     public static double calculateWindChill(double celsiusTemp, double windSpeed){
         double windChill;
-        windChill = (13.12 +(0.6215*(celsiusTemp)))-
-                (11.37*(Math.pow(windSpeed,0.16))+(0.3965*(celsiusTemp)*(Math.pow(windSpeed,0.16))));
+        windChill = 13.12 +0.6215*(celsiusTemp)-11.37*Math.pow(windSpeed,0.16)+0.3965*(celsiusTemp*Math.pow(windSpeed,0.16));
         return toTwoDecimalPlaces(windChill);
     }
 
     public static String convertWindDirectionToText(double windDirection) {
 
-        if (((windDirection >= 0) && (windDirection <= 11.25))
-            && ((windDirection > 348.75) && (windDirection < 360.00)))
+        if (((windDirection >= 0.0) && (windDirection <= 11.25))
+            || ((windDirection > 348.75) && (windDirection <= 360.0)))
         {
             return "N";
         }

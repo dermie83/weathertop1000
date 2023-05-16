@@ -3,13 +3,13 @@
 
 #{menu id:"dashboard"/}
 
-<header class="title is-capitalized">
+<header class="title is-capitalized"><br>
   ${member.firstname} ${member.lastname}'s Station List
 </header>
 
 #{list items:stations, as:'station'}
   #{if station.readings.size() > 0}
-  <div class="tile is-ancestor">
+  <div class="tile is-ancestor has-background-info-light">
     <div class="tile is-parent">
       <article class="tile is-child box">
         <span class="icon-text has-text-info">
@@ -81,7 +81,9 @@
         </span>
         </span>
         <p class="title">Pressure</p><br>
-        <p class="subtitle">${station.getLatestPressure()} hPa</p>
+        <p class="subtitle">${station.getLatestPressure()} hPa<br>
+        Max: ${station.getMaxPressure()} hPa<br>
+        Min: ${station.getMinPressure()} hPa</p>
       </article>
     </div>
   </div>
@@ -106,6 +108,7 @@
   #{/else}
 #{/list}
 #{addstation /}
+
 
 
 
