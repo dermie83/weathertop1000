@@ -12,8 +12,7 @@ import javax.persistence.OneToMany;
 import play.db.jpa.Model;
 
 @Entity
-public class Station extends Model
-{
+public class Station extends Model {
     public String name;
     public float lat;
     public float lng;
@@ -21,8 +20,7 @@ public class Station extends Model
     @OneToMany(cascade = CascadeType.ALL)
     public List<Reading> readings = new ArrayList<>();
 
-    public Station(String name, float lat, float lng)
-    {
+    public Station(String name, float lat, float lng) {
         this.name = name;
         this.lat = lat;
         this.lng = lng;
@@ -46,13 +44,11 @@ public class Station extends Model
     public double getLatestWind() {
         double wind = readings.get(readings.size() - 1).windSpeed;
         return wind;
-
     }
 
     public double getLatestWindDirection() {
         double windDirection = readings.get(readings.size() - 1).windDirection;
         return windDirection;
-
     }
 
     public int getLatestPressure() {
@@ -64,6 +60,12 @@ public class Station extends Model
         int codeNumber = getLatestWeatherCode();
         String codeToText = Conversions.convertWeatherCodeToText(codeNumber);
         return codeToText;
+    }
+
+    public String getLatestWeatherCodeToIcon() {
+        int codeNumber = getLatestWeatherCode();
+        String codeToIcon = Conversions.convertWeatherToIcon(codeNumber);
+        return codeToIcon;
     }
 
     public double getLatestConvertTemp() {
@@ -78,7 +80,6 @@ public class Station extends Model
         double windChillTemp = Conversions.calculateWindChill(latestTemp, latestWindSpeed);
         return windChillTemp;
     }
-
 
     public int getLatestWindToBeaufort() {
         double wind = getLatestWind();
@@ -98,55 +99,177 @@ public class Station extends Model
         return bftToText;
     }
 
-    public double getMaxTemp(){
+    public double getMaxTemp() {
         double maxTemp = readings.get(0).temperature;
         for (int i = 1; i < readings.size(); i++) {
             if (maxTemp < readings.get(i).temperature)
                 maxTemp = readings.get(i).temperature;
         }
-//        System.out.println("Maximum Temp in ArrayList = "
-//                + maxTemp);
         return maxTemp;
-
     }
 
-    public double getMinTemp(){
+    public double getMinTemp() {
         double minTemp = readings.get(0).temperature;
         for (int i = 1; i < readings.size(); i++) {
             if (minTemp > readings.get(i).temperature)
                 minTemp = readings.get(i).temperature;
         }
         return minTemp;
-
     }
 
-    public int getMaxPressure(){
+    public int getMaxPressure() {
         int maxPressure = readings.get(0).pressure;
         for (int i = 1; i < readings.size(); i++) {
             if (maxPressure < readings.get(i).pressure)
                 maxPressure = readings.get(i).pressure;
         }
         return maxPressure;
-
     }
 
-    public int getMinPressure(){
+    public int getMinPressure() {
         int minPressure = readings.get(0).pressure;
         for (int i = 1; i < readings.size(); i++) {
             if (minPressure > readings.get(i).pressure)
                 minPressure = readings.get(i).pressure;
         }
         return minPressure;
+    }
+
+    public double getMaxWind() {
+        double maxWind = readings.get(0).windSpeed;
+        for (int i = 1; i < readings.size(); i++) {
+            if (maxWind < readings.get(i).windSpeed)
+                maxWind = readings.get(i).windSpeed;
+        }
+        return maxWind;
+    }
+
+    public double getMinWind() {
+        double minWind = readings.get(0).windSpeed;
+        for (int i = 1; i < readings.size(); i++) {
+            if (minWind > readings.get(i).windSpeed)
+                minWind = readings.get(i).windSpeed;
+        }
+        return minWind;
+    }
+
+    public List<Double> latestTempReading() {
+        List<Double> latestReadings = new ArrayList<Double>();
+
+        for (int i = 0; i < readings.size(); i++) {
+            latestReadings.add(readings.get(i).temperature);
+        }
+        return latestReadings;
+    }
+
+    public List<Double> latestWindReading() {
+        List<Double> latestReadings = new ArrayList<Double>();
+
+        for (int i = 0; i < readings.size(); i++) {
+            latestReadings.add(readings.get(i).windSpeed);
+        }
+        return latestReadings;
+    }
+
+    public List<Integer> latestPressureReading() {
+        List<Integer> latestReadings = new ArrayList<Integer>();
+
+        for (int i = 0; i < readings.size(); i++) {
+            latestReadings.add(readings.get(i).pressure);
+        }
+        return latestReadings;
+    }
+
+    // Function to check the type of the array
+    public String checkTempType(int n) {
+        List<Double> arr = latestTempReading();
+
+        // If the first two and the last two elements
+        // of the array are in increasing order
+        if (arr.get(0) <= arr.get(1) &&
+                arr.get(n - 2) <= arr.get(n - 1))
+            return "Increasing";
+
+            // If the first two and the last two elements
+            // of the array are in decreasing order
+        else if (arr.get(0) >= arr.get(1) &&
+                arr.get(n - 2) >= arr.get(n - 1))
+            return "Decreasing";
+
+            // If the first two elements of the array are in
+            // increasing order and the last two elements
+            // of the array are in decreasing order
+        else if (arr.get(0) <= arr.get(1) &&
+                arr.get(n - 2) >= arr.get(n - 1))
+            return "Increasing then decreasing";
+
+            // If the first two elements of the array are in
+            // decreasing order and the last two elements
+            // of the array are in increasing order
+        else
+            return "Decreasing then increasing";
 
     }
 
-//    public List<Reading> latestReading(int readingSize) {
-//        List<Reading> latestReadings = new ArrayList<Reading>();
-//        if (readings.size() > 0) {
-//            latestReadings = readings.subList(readings.size() - readingSize, readings.size());
-//        }
-//        return (latestReadings);
-//    }
+    public String checkWindType(int n) {
+        List<Double> arr = latestWindReading();
+
+        // If the first two and the last two elements
+        // of the array are in increasing order
+        if (arr.get(0) <= arr.get(1) &&
+                arr.get(n - 2) <= arr.get(n - 1))
+            return "Increasing";
+
+            // If the first two and the last two elements
+            // of the array are in decreasing order
+        else if (arr.get(0) >= arr.get(1) &&
+                arr.get(n - 2) >= arr.get(n - 1))
+            return "Decreasing";
+
+            // If the first two elements of the array are in
+            // increasing order and the last two elements
+            // of the array are in decreasing order
+        else if (arr.get(0) <= arr.get(1) &&
+                arr.get(n - 2) >= arr.get(n - 1))
+            return "Increasing then decreasing";
+
+            // If the first two elements of the array are in
+            // decreasing order and the last two elements
+            // of the array are in increasing order
+        else
+            return "Decreasing then increasing";
+
+    }
+
+    public String checkPressureType(int n) {
+        List<Integer> arr = latestPressureReading();
+
+        // If the first two and the last two elements
+        // of the array are in increasing order
+        if (arr.get(0) <= arr.get(1) &&
+                arr.get(n - 2) <= arr.get(n - 1))
+            return "Increasing";
+
+            // If the first two and the last two elements
+            // of the array are in decreasing order
+        else if (arr.get(0) >= arr.get(1) &&
+                arr.get(n - 2) >= arr.get(n - 1))
+            return "Decreasing";
+
+            // If the first two elements of the array are in
+            // increasing order and the last two elements
+            // of the array are in decreasing order
+        else if (arr.get(0) <= arr.get(1) &&
+                arr.get(n - 2) >= arr.get(n - 1))
+            return "Increasing then decreasing";
+
+            // If the first two elements of the array are in
+            // decreasing order and the last two elements
+            // of the array are in increasing order
+        else
+            return "Decreasing then increasing";
+
+    }
 
 
 }

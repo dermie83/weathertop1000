@@ -1,5 +1,9 @@
 package models;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Conversions {
 
     public Conversions(){
@@ -31,8 +35,33 @@ public class Conversions {
 
     }
 
+    public static String convertWeatherToIcon(int weatherCode) {
+
+        switch (weatherCode) {
+            case 100:
+                return "fa-solid fa-sun";
+            case 200:
+                return "fa-solid fa-cloud-sun";
+            case 300:
+                return "fa-solid fa-cloud";
+            case 400:
+                return "fa-solid fa-cloud-sun-rain";
+            case 500:
+                return "fa-solid fa-cloud-showers-heavy";
+            case 600:
+                return "fa-solid fa-cloud-rain";
+            case 700:
+                return "fa-solid fa-snowflake";
+            case 800:
+                return "fa-solid fa-cloud-bolt";
+            default:
+                return "No Code Number";
+        }
+
+    }
+
     public static double toTwoDecimalPlaces(double num){
-        return (int) (num *100 ) /100.0;
+        return (int) (num *100 ) /100;
     }
 
     public static double convertTemp(double celsiusTemp){
@@ -212,5 +241,6 @@ public class Conversions {
         }
 
     }
+
 
 }

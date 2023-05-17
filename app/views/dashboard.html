@@ -14,7 +14,7 @@
       <article class="tile is-child box">
         <span class="icon-text has-text-info">
         <span class="icon is-large fas fa-2x">
-        <i class="fas fa-location"></i>
+          <i class="fa-solid fa-location-dot"></i>
         </span>
         </span>
         <p class="title">${station.name}</p><br>
@@ -26,7 +26,7 @@
       <article class="tile is-child box">
         <span class="icon-text has-text-dark">
         <span class="icon is-large fas fa-2x">
-        <i class="fas fa-clock"></i>
+        <i class="fa-sharp fa-solid fa-calendar-days"></i>
         </span>
         </span>
         <p class="title">Date/Time</p><br>
@@ -37,7 +37,7 @@
       <article class="tile is-child box">
         <span class="icon-text has-text-grey">
         <span class="icon is-large fas fa-2x">
-        <i class="fas fa-cloud"></i>
+        <i class='${station.getLatestWeatherCodeToIcon()}'></i>
         </span>
         </span>
         <p class="title">Weather</p><br>
@@ -46,16 +46,17 @@
     </div>
     <div class="tile is-parent">
       <article class="tile is-child box">
-        <span class="icon-text has-text-danger">
+        <span class="icon-text has-text-info">
         <span class="icon is-large fas fa-2x">
-        <i class="fas fa-info-circle"></i>
+        <i class="fa-solid fa-temperature-low"></i>
         </span>
         </span>
         <p class="title">Temp</p><br>
         <p class="subtitle"> ${station.getLatestTemp()} C<br>
           ${station.getLatestConvertTemp()} F<br>
           Max: ${station.getMaxTemp()} C<br>
-          Min: ${station.getMinTemp()} C
+          Min: ${station.getMinTemp()} C<br>
+          Trend: ${station.checkTempType(3)}
         </p>
       </article>
     </div>
@@ -63,14 +64,18 @@
       <article class="tile is-child box">
         <span class="icon-text has-text-warning">
         <span class="icon is-large fas fa-2x">
-        <i class="fas fa-wind"></i>
+        <i class="fa-solid fa-wind"></i>
         </span>
         </span>
         <p class="title">Wind</p><br>
         <p class="subtitle">${station.getLatestBeaufortToText()}<br>
-          ${station.getLatestWindDirectionToText()}<br>
+          Direction: ${station.getLatestWindDirectionToText()}<br>
           Feels like<br>
-          ${station.getLatestWindChill()} C</p>
+          ${station.getLatestWindChill()} C<br>
+          Max : ${station.getMaxWind()}<br>
+          Min : ${station.getMinWind()}<br>
+          Trend: ${station.checkWindType(3)}
+        </p>
       </article>
     </div>
     <div class="tile is-parent">
@@ -83,7 +88,8 @@
         <p class="title">Pressure</p><br>
         <p class="subtitle">${station.getLatestPressure()} hPa<br>
         Max: ${station.getMaxPressure()} hPa<br>
-        Min: ${station.getMinPressure()} hPa</p>
+        Min: ${station.getMinPressure()} hPa<br>
+          Trend: ${station.checkPressureType(3)}</p>
       </article>
     </div>
   </div>
@@ -92,7 +98,6 @@
       </a>
       <a href="/dashboard/${member.id}/deleteStation/${station.id}" class="icon has-text-danger">
         <i class="fas fa-trash"></i>
-      </a>
       </a>
   </div>
   #{/if}
