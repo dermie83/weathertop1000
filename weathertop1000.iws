@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b20f9aa8-6b65-4c43-8c39-5609b55bff95" name="Changes" comment="Trend Metric and Dynamic Icons added">
-      <change beforePath="$PROJECT_DIR$/Template_1008$_run_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Template_1008$_run_closure1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template_1008.class" beforeDir="false" afterPath="$PROJECT_DIR$/Template_1008.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Conversions.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Conversions.java" afterDir="false" />
+    <list default="true" id="b20f9aa8-6b65-4c43-8c39-5609b55bff95" name="Changes" comment="Dynamic Trend Icons Added">
+      <change beforePath="$PROJECT_DIR$/Template_1000$_run_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Template_1000$_run_closure1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1004$_run_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Template_1004$_run_closure1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Station.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Conversions" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Conversions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_dashboard.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Station" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Station" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/models/Conversions.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/models/Conversions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/models/Station.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/models/Station.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weathertop1000.iws" beforeDir="false" afterPath="$PROJECT_DIR$/weathertop1000.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +104,7 @@
       <workItem from="1684240355166" duration="17981000" />
       <workItem from="1684271703326" duration="5412000" />
       <workItem from="1684345339735" duration="10117000" />
-      <workItem from="1684426684407" duration="5868000" />
+      <workItem from="1684426684407" duration="8144000" />
     </task>
     <task id="LOCAL-00001" summary="TimeStamp field added to Reading Class">
       <created>1683063596734</created>
@@ -240,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684355502271</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Dynamic Trend Icons Added">
+      <created>1684432682081</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1684432682081</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,6 +329,7 @@
     <MESSAGE value="image added to homepage" />
     <MESSAGE value="about page started, select box added, station name required added" />
     <MESSAGE value="Trend Metric and Dynamic Icons added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trend Metric and Dynamic Icons added" />
+    <MESSAGE value="Dynamic Trend Icons Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dynamic Trend Icons Added" />
   </component>
 </project>

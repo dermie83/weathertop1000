@@ -185,6 +185,8 @@ public class Station extends Model {
         List<Double> arr = latestTempReading();
             // If the first two and the last two elements
             // of the array are in increasing order
+        if ( readings.size() >2){
+
             if (arr.get(arr.size() - 2) <= arr.get(arr.size() - 1) &&
                     arr.get(arr.size() - 3) <= arr.get(arr.size() - 2))
                 return Conversions.convertTrendToIcon("Increasing");
@@ -198,13 +200,17 @@ public class Station extends Model {
                 // of the array are in increasing order
             else
                 return Conversions.convertTrendToIcon("Steady");
+        }{
+            return  "";
         }
+    }
 
     // Function to check the type of the array
     public String checkWindTrend() {
         List<Double> arr = latestWindReading();
             // If the first two and the last two elements
             // of the array are in increasing order
+        if (readings.size() > 2){
             if (arr.get(arr.size() - 2) <= arr.get(arr.size() - 1) &&
                     arr.get(arr.size() - 3) <= arr.get(arr.size() - 2))
                 return Conversions.convertTrendToIcon("Increasing");
@@ -219,12 +225,17 @@ public class Station extends Model {
             else
                 return Conversions.convertTrendToIcon("Steady");
         }
+    {
+        return "";
+    }}
+
 
     // Function to check the type of the array
     public String checkPressureTrend() {
         List<Integer> arr = latestPressureReading();
             // If the first two and the last two elements
             // of the array are in increasing order
+        if (readings.size()> 2){
             if (arr.get(arr.size() - 2) <= arr.get(arr.size() - 1) &&
                     arr.get(arr.size() - 3) <= arr.get(arr.size() - 2))
                 return Conversions.convertTrendToIcon("Increasing");
@@ -240,6 +251,9 @@ public class Station extends Model {
                 return Conversions.convertTrendToIcon("Steady");
 
         }
+    {
+        return "";
+    }}
 
 
 }
