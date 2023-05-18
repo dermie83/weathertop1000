@@ -48,7 +48,7 @@
       <article class="tile is-child box">
         <span class="icon-text has-text-info">
         <span class="icon is-large fas fa-2x">
-        <i class="fa-solid fa-temperature-low"></i>
+        <i class='${station.checkTempTrend()}'></i>
         </span>
         </span>
         <p class="title">Temp</p><br>
@@ -56,7 +56,6 @@
           ${station.getLatestConvertTemp()} F<br>
           Max: ${station.getMaxTemp()} C<br>
           Min: ${station.getMinTemp()} C<br>
-          Trend: ${station.checkTempType(3)}
         </p>
       </article>
     </div>
@@ -64,7 +63,7 @@
       <article class="tile is-child box">
         <span class="icon-text has-text-warning">
         <span class="icon is-large fas fa-2x">
-        <i class="fa-solid fa-wind"></i>
+        <i class='${station.checkWindTrend()}'></i>
         </span>
         </span>
         <p class="title">Wind</p><br>
@@ -74,22 +73,20 @@
           ${station.getLatestWindChill()} C<br>
           Max : ${station.getMaxWind()}<br>
           Min : ${station.getMinWind()}<br>
-          Trend: ${station.checkWindType(3)}
         </p>
       </article>
     </div>
     <div class="tile is-parent">
       <article class="tile is-child box">
-        <span class="icon-text has-text-info">
+        <span class="icon-text has-text-dark">
         <span class="icon is-large fas fa-2x">
-        <i class="fas fa-gauge"></i>
+        <i class='${station.checkPressureTrend()}'></i>
         </span>
         </span>
         <p class="title">Pressure</p><br>
         <p class="subtitle">${station.getLatestPressure()} hPa<br>
         Max: ${station.getMaxPressure()} hPa<br>
         Min: ${station.getMinPressure()} hPa<br>
-          Trend: ${station.checkPressureType(3)}</p>
       </article>
     </div>
   </div>

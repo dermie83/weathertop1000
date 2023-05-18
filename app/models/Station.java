@@ -181,95 +181,65 @@ public class Station extends Model {
     }
 
     // Function to check the type of the array
-    public String checkTempType(int n) {
+    public String checkTempTrend() {
         List<Double> arr = latestTempReading();
-
-        // If the first two and the last two elements
-        // of the array are in increasing order
-        if (arr.get(0) <= arr.get(1) &&
-                arr.get(n - 2) <= arr.get(n - 1))
-            return "Increasing";
-
             // If the first two and the last two elements
-            // of the array are in decreasing order
-        else if (arr.get(0) >= arr.get(1) &&
-                arr.get(n - 2) >= arr.get(n - 1))
-            return "Decreasing";
-
-            // If the first two elements of the array are in
-            // increasing order and the last two elements
-            // of the array are in decreasing order
-        else if (arr.get(0) <= arr.get(1) &&
-                arr.get(n - 2) >= arr.get(n - 1))
-            return "Increasing then decreasing";
-
-            // If the first two elements of the array are in
-            // decreasing order and the last two elements
             // of the array are in increasing order
-        else
-            return "Decreasing then increasing";
+            if (arr.get(arr.size() - 2) <= arr.get(arr.size() - 1) &&
+                    arr.get(arr.size() - 3) <= arr.get(arr.size() - 2))
+                return Conversions.convertTrendToIcon("Increasing");
+                // If the first two and the last two elements
+                // of the array are in decreasing order
+            else if (arr.get(arr.size() - 2) >= arr.get(arr.size() - 1) &&
+                    arr.get(arr.size() - 3) >= arr.get(arr.size() - 2))
+                return Conversions.convertTrendToIcon("Decreasing");
+                // If the first two elements of the array are in
+                // decreasing order and the last two elements
+                // of the array are in increasing order
+            else
+                return Conversions.convertTrendToIcon("Steady");
+        }
 
-    }
-
-    public String checkWindType(int n) {
+    // Function to check the type of the array
+    public String checkWindTrend() {
         List<Double> arr = latestWindReading();
-
-        // If the first two and the last two elements
-        // of the array are in increasing order
-        if (arr.get(0) <= arr.get(1) &&
-                arr.get(n - 2) <= arr.get(n - 1))
-            return "Increasing";
-
             // If the first two and the last two elements
-            // of the array are in decreasing order
-        else if (arr.get(0) >= arr.get(1) &&
-                arr.get(n - 2) >= arr.get(n - 1))
-            return "Decreasing";
-
-            // If the first two elements of the array are in
-            // increasing order and the last two elements
-            // of the array are in decreasing order
-        else if (arr.get(0) <= arr.get(1) &&
-                arr.get(n - 2) >= arr.get(n - 1))
-            return "Increasing then decreasing";
-
-            // If the first two elements of the array are in
-            // decreasing order and the last two elements
             // of the array are in increasing order
-        else
-            return "Decreasing then increasing";
+            if (arr.get(arr.size() - 2) <= arr.get(arr.size() - 1) &&
+                    arr.get(arr.size() - 3) <= arr.get(arr.size() - 2))
+                return Conversions.convertTrendToIcon("Increasing");
+                // If the first two and the last two elements
+                // of the array are in decreasing order
+            else if (arr.get(arr.size() - 2) >= arr.get(arr.size() - 1) &&
+                    arr.get(arr.size() - 3) >= arr.get(arr.size() - 2))
+                return Conversions.convertTrendToIcon("Decreasing");
+                // If the first two elements of the array are in
+                // decreasing order and the last two elements
+                // of the array are in increasing order
+            else
+                return Conversions.convertTrendToIcon("Steady");
+        }
 
-    }
-
-    public String checkPressureType(int n) {
+    // Function to check the type of the array
+    public String checkPressureTrend() {
         List<Integer> arr = latestPressureReading();
-
-        // If the first two and the last two elements
-        // of the array are in increasing order
-        if (arr.get(0) <= arr.get(1) &&
-                arr.get(n - 2) <= arr.get(n - 1))
-            return "Increasing";
-
             // If the first two and the last two elements
-            // of the array are in decreasing order
-        else if (arr.get(0) >= arr.get(1) &&
-                arr.get(n - 2) >= arr.get(n - 1))
-            return "Decreasing";
-
-            // If the first two elements of the array are in
-            // increasing order and the last two elements
-            // of the array are in decreasing order
-        else if (arr.get(0) <= arr.get(1) &&
-                arr.get(n - 2) >= arr.get(n - 1))
-            return "Increasing then decreasing";
-
-            // If the first two elements of the array are in
-            // decreasing order and the last two elements
             // of the array are in increasing order
-        else
-            return "Decreasing then increasing";
+            if (arr.get(arr.size() - 2) <= arr.get(arr.size() - 1) &&
+                    arr.get(arr.size() - 3) <= arr.get(arr.size() - 2))
+                return Conversions.convertTrendToIcon("Increasing");
+                // If the first two and the last two elements
+                // of the array are in decreasing order
+            else if (arr.get(arr.size() - 2) >= arr.get(arr.size() - 1) &&
+                    arr.get(arr.size() - 3) >= arr.get(arr.size() - 2))
+                return Conversions.convertTrendToIcon("Decreasing");
+                // If the first two elements of the array are in
+                // decreasing order and the last two elements
+                // of the array are in increasing order
+            else
+                return Conversions.convertTrendToIcon("Steady");
 
-    }
+        }
 
 
 }

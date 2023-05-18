@@ -70,6 +70,18 @@ public class Conversions {
         return toTwoDecimalPlaces(fahrenheitTemp);
     }
 
+    public static String convertTrendToIcon(String trend)
+    {
+        if (trend == "Increasing"){
+            return "fa-solid fa-arrow-up";
+        } else if (trend == "Decreasing") {
+            return "fa-solid fa-arrow-down";
+        } else if (trend == "Steady") {
+            return "fa-solid fa-arrows-up-down";
+        }
+        return "fa-solid fa-0";
+    }
+
     public static int convertWindSpeedToBeaufortIndex(double windSpeed) {
 
         if (windSpeed == 1)
