@@ -89,13 +89,14 @@
         Min: ${station.getMinPressure()} hPa<br>
       </article>
     </div>
+    <a href="/station/${station.id}" class="icon has-text-primary">
+      <i class="fas fa-folder"></i>
+    </a>
+    <a href="/dashboard/${member.id}/deleteStation/${station.id}" class="icon has-text-danger">
+      <i class="fas fa-trash"></i>
+    </a>
   </div>
-      <a href="/station/${station.id}" class="icon has-text-primary">
-        <i class="fas fa-folder"></i>
-      </a>
-      <a href="/dashboard/${member.id}/deleteStation/${station.id}" class="icon has-text-danger">
-        <i class="fas fa-trash"></i>
-      </a>
+
   </div>
   #{/if}
   #{else}
