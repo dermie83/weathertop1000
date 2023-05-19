@@ -45,11 +45,20 @@
     </div>
     <div class="tile is-parent">
       <article class="tile is-child box">
-        <span class="icon-text has-text-info">
-        <span class="icon is-large fas fa-2x">
-        <i class='${station.checkTempTrend()}'></i>
-        </span>
-        </span>
+        <a>
+          <span class="icon-text has-text-info">
+          <span class="icon is-large fas fa-2x">
+          <i class="fa-solid fa-temperature-high"></i>
+          </span>
+          </span>
+        </a>
+        <a>
+          <span class="icon-text has-text-info">
+          <span class="icon is-large fas fa-2x">
+          <i class='${station.checkTempTrend()}'></i>
+          </span>
+          </span>
+        </a>
         <p class="title">Temp</p><br>
         <p class="subtitle"> ${station.getLatestTemp()} C<br>
           ${station.getLatestConvertTemp()} F<br>
@@ -60,11 +69,20 @@
     </div>
     <div class="tile is-parent">
       <article class="tile is-child box">
-        <span class="icon-text has-text-warning">
-        <span class="icon is-large fas fa-2x">
-        <i class='${station.checkWindTrend()}'></i>
-        </span>
-        </span>
+        <a>
+          <span class="icon-text has-text-dark">
+          <span class="icon is-large fas fa-2x">
+          <i class="fa-solid fa-wind"></i>
+          </span>
+          </span>
+        </a>
+        <a>
+          <span class="icon-text has-text-warning">
+          <span class="icon is-large fas fa-2x">
+          <i class='${station.checkWindTrend()}'></i>
+          </span>
+          </span>
+        </a>
         <p class="title">Wind</p><br>
         <p class="subtitle">${station.getLatestBeaufortToText()}<br>
           Direction: ${station.getLatestWindDirectionToText()}<br>
@@ -77,11 +95,20 @@
     </div>
     <div class="tile is-parent">
       <article class="tile is-child box">
-        <span class="icon-text has-text-dark">
-        <span class="icon is-large fas fa-2x">
-        <i class='${station.checkPressureTrend()}'></i>
-        </span>
-        </span>
+        <a>
+          <span class="icon-text has-text-dark">
+          <span class="icon is-large fas fa-2x">
+          <i class="fa-solid fa-gauge-simple-high"></i>
+          </span>
+          </span>
+        </a>
+        <a>
+          <span class="icon-text has-text-dark">
+          <span class="icon is-large fas fa-2x">
+          <i class='${station.checkPressureTrend()}'></i>
+          </span>
+          </span>
+        </a>
         <p class="title">Pressure</p><br>
         <p class="subtitle">${station.getLatestPressure()} hPa<br>
         Max: ${station.getMaxPressure()} hPa<br>

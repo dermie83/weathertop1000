@@ -201,7 +201,7 @@ public class Station extends Model {
             else
                 return Conversions.convertTrendToIcon("Steady");
         }{
-            return  "";
+            return  Conversions.convertTrendToIcon("No Trend Yet");
         }
     }
 
@@ -226,7 +226,7 @@ public class Station extends Model {
                 return Conversions.convertTrendToIcon("Steady");
         }
     {
-        return "";
+        return Conversions.convertTrendToIcon("No Trend Yet");
     }}
 
 
@@ -252,7 +252,7 @@ public class Station extends Model {
 
         }
     {
-        return "";
+        return Conversions.convertTrendToIcon("No Trend Yet");
     }}
 
 

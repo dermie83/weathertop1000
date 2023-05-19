@@ -79,7 +79,11 @@ public class Conversions {
         } else if (trend == "Steady") {
             return "fa-solid fa-arrows-up-down";
         }
-        return "fa-solid fa-0";
+        else if (trend == "No Trend Yet") {
+            return "fa-solid fa-circle-exclamation";
+        }
+
+        return "fa-solid fa-circle-exclamation";
     }
 
     public static int convertWindSpeedToBeaufortIndex(double windSpeed) {

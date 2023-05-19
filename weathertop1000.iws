@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4532805d-298a-4590-a023-f628b34f3908" name="Changes" comment="">
+    <list default="true" id="4532805d-298a-4590-a023-f628b34f3908" name="Changes" comment="Readjusted folder and trash Icons">
+      <change beforePath="$PROJECT_DIR$/app/models/Conversions.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Conversions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Station.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weathertop1000.iws" beforeDir="false" afterPath="$PROJECT_DIR$/weathertop1000.iws" afterDir="false" />
     </list>
@@ -51,11 +53,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684508670838</updated>
-      <workItem from="1684508672857" duration="1318000" />
+      <workItem from="1684508672857" duration="3092000" />
     </task>
+    <task id="LOCAL-00001" summary="Readjusted folder and trash Icons">
+      <created>1684510168551</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684510168551</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Readjusted folder and trash Icons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readjusted folder and trash Icons" />
   </component>
 </project>
