@@ -4,10 +4,83 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b20f9aa8-6b65-4c43-8c39-5609b55bff95" name="Changes" comment="Check Trend method, Out of Index error fixed">
-      <change beforePath="$PROJECT_DIR$/app/clevercloud/play1_version" beforeDir="false" afterPath="$PROJECT_DIR$/clevercloud/play1_version" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/application.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/dependencies.yml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/dependencies.yml" afterDir="false" />
+    <list default="true" id="0f95a674-375c-4135-a7b2-c68c7dc4f555" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1000$_run_closure1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1000.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1001$_run_closure1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1001.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1002$_run_closure1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1002.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1003$_run_closure1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1003.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1004$_run_closure1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1004.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1005$_run_closure1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1005.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1006$_run_closure1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1006.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1007$_run_closure1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1007.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1008$_run_closure1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1008.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1009$_run_closure1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1009.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1010$_run_closure1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1010.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1011$_run_closure1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1011.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1012$_run_closure1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1012.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/start.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/Bootstrap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_admin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_dashboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_errors_404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_errors_500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_playlist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_start.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_station.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_addplaylist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_addreading.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_addsong.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_addstation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_listsongs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_readings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_conf_data.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_errors_404.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_tags_404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_tags_500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.About" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Admin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Dashboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.PlaylistCtrl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Start" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.StationCtrl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Conversion" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Conversions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Playlist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Reading" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Song" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Station" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/Bootstrap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/About.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/Dashboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/PlaylistCtrl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/Start.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/StationCtrl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/models/Conversion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/models/Conversions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/models/Playlist.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/models/Reading.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/models/Song.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/models/Station.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weathertop1000.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/weathertop1000.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weathertop1000.iws" beforeDir="false" afterPath="$PROJECT_DIR$/weathertop1000.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,31 +91,8 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="1fd0f291-ac89-448b-87bf-f13e515d669e" />
-        <option name="url" value="https://github.com/dermie83/weathertop1000.git" />
-      </UrlAndAccount>
-    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -50,291 +100,36 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectId" id="2PFEguPneGVL7VfpoDAZRNY3UBc" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2Q0zZC8k9Bi57PcxNCLzk5jIPx3" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/dermi/DVDLibraryV2.0&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\dermi\weather-top-inc-v1\public\images" />
-    </key>
-  </component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b20f9aa8-6b65-4c43-8c39-5609b55bff95" name="Changes" comment="" />
-      <created>1683044543447</created>
+      <changelist id="0f95a674-375c-4135-a7b2-c68c7dc4f555" name="Changes" comment="" />
+      <created>1684505348417</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1683044543447</updated>
-      <workItem from="1683044546341" duration="5435000" />
-      <workItem from="1683061360045" duration="2224000" />
-      <workItem from="1683132287347" duration="9435000" />
-      <workItem from="1683199960834" duration="19117000" />
-      <workItem from="1683287855500" duration="19583000" />
-      <workItem from="1683378144554" duration="8517000" />
-      <workItem from="1683565244274" duration="7253000" />
-      <workItem from="1683652245212" duration="4526000" />
-      <workItem from="1683712863530" duration="17216000" />
-      <workItem from="1683896833824" duration="4732000" />
-      <workItem from="1683904191026" duration="9329000" />
-      <workItem from="1683979245702" duration="10884000" />
-      <workItem from="1684072993552" duration="10894000" />
-      <workItem from="1684240355166" duration="17981000" />
-      <workItem from="1684271703326" duration="5412000" />
-      <workItem from="1684345339735" duration="10117000" />
-      <workItem from="1684426684407" duration="8540000" />
-      <workItem from="1684502733009" duration="1033000" />
+      <updated>1684505348417</updated>
+      <workItem from="1684505351173" duration="348000" />
     </task>
-    <task id="LOCAL-00001" summary="TimeStamp field added to Reading Class">
-      <created>1683063596734</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1683063596734</updated>
-    </task>
-    <task id="LOCAL-00002" summary="TimeStamp field added to Reading Class">
-      <created>1683132303897</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1683132303897</updated>
-    </task>
-    <task id="LOCAL-00003" summary="TimeStamp field added to Reading Class">
-      <created>1683200206314</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1683200206314</updated>
-    </task>
-    <task id="LOCAL-00004" summary="TimeStamp field added to Reading Class">
-      <created>1683200362785</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1683200362785</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Method to get last reading added">
-      <created>1683311154086</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1683311154086</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Method to get last reading added">
-      <created>1683311173995</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1683311173995</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Added If statement to Dashboard html">
-      <created>1683329091229</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1683329091229</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Added If statement to Dashboard html">
-      <created>1683329120178</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1683329120178</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Beaufort Index and Temp Conversion Method added">
-      <created>1683386729551</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1683386729551</updated>
-    </task>
-    <task id="LOCAL-00010" summary="WindChill metric and WindDirection field added">
-      <created>1683572818261</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1683572818261</updated>
-    </task>
-    <task id="LOCAL-00011" summary="coordinate fields created and image class added to start page">
-      <created>1683658013165</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1683658013165</updated>
-    </task>
-    <task id="LOCAL-00012" summary="coordinate fields created and image class added to start page">
-      <created>1683658040122</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1683658040122</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Create Max and Min method and enable sorting of Station Name">
-      <created>1683741057745</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1683741057745</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Accounts Signup, login, logout function created">
-      <created>1683745621608</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1683745621608</updated>
-    </task>
-    <task id="LOCAL-00015" summary="database setup and deployment configuration">
-      <created>1683905942028</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1683905942028</updated>
-    </task>
-    <task id="LOCAL-00016" summary="icons added to Dashboard">
-      <created>1683990684683</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1683990684683</updated>
-    </task>
-    <task id="LOCAL-00017" summary="image added to homepage">
-      <created>1684085259180</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1684085259180</updated>
-    </task>
-    <task id="LOCAL-00018" summary="about page started, select box added, station name required added">
-      <created>1684261177243</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1684261177243</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Trend Metric and Dynamic Icons added">
-      <created>1684355502271</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1684355502271</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Dynamic Trend Icons Added">
-      <created>1684432682081</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1684432682081</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Check Trend method, Out of Index error fixed">
-      <created>1684435281495</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1684435281495</updated>
-    </task>
-    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-        <entry key="bdc78359-f2a3-402c-8e60-b7f6f76f0da3">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="bdc78359-f2a3-402c-8e60-b7f6f76f0da3" value="TOOL_WINDOW" />
-      </map>
-    </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="origin/master" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="TimeStamp field added to Reading Class" />
-    <MESSAGE value="Method to get last reading added" />
-    <MESSAGE value="Added If statement to Dashboard html" />
-    <MESSAGE value="Beaufort Index and Temp Conversion Method added" />
-    <MESSAGE value="WindChill metric and WindDirection field added" />
-    <MESSAGE value="coordinate fields created and image class added to start page" />
-    <MESSAGE value="Create Max and Min method and enable sorting of Station Name" />
-    <MESSAGE value="Accounts Signup, login, logout function created" />
-    <MESSAGE value="database setup and deployment configuration" />
-    <MESSAGE value="icons added to Dashboard" />
-    <MESSAGE value="image added to homepage" />
-    <MESSAGE value="about page started, select box added, station name required added" />
-    <MESSAGE value="Trend Metric and Dynamic Icons added" />
-    <MESSAGE value="Dynamic Trend Icons Added" />
-    <MESSAGE value="Check Trend method, Out of Index error fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Check Trend method, Out of Index error fixed" />
   </component>
 </project>

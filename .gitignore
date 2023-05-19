@@ -1,0 +1,8 @@
+/tmp
+.project
+.idea
+*.iml
+*.ipr
+*.iws
+*.class
+Template_*.*
