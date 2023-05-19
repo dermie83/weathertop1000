@@ -3,10 +3,9 @@
 
 #{menu id:"dashboard"/}
 
-<header class="title is-capitalized"><br>
+<header class="title is-capitalized">
   ${member.firstname} ${member.lastname}'s Station List
 </header>
-
 #{list items:stations, as:'station'}
   #{if station.readings.size() > 0}
   <div class="tile is-ancestor has-background-info-light">
@@ -29,7 +28,7 @@
         <i class="fa-sharp fa-solid fa-calendar-days"></i>
         </span>
         </span>
-        <p class="title">Date/Time</p><br>
+        <p class="title">Date</p><br>
         <p class="subtitle">${station.getLatestTimestamp()}</p>
       </article>
     </div>
@@ -89,13 +88,14 @@
         Min: ${station.getMinPressure()} hPa<br>
       </article>
     </div>
-  </div>
-      <a href="/station/${station.id}" class="icon has-text-primary">
-        <i class="fas fa-folder"></i>
-      </a>
-      <a href="/dashboard/${member.id}/deleteStation/${station.id}" class="icon has-text-danger">
-        <i class="fas fa-trash"></i>
-      </a>
+      <div>
+        <a href="/station/${station.id}" class="icon has-text-primary">
+          <i class="fas fa-folder"></i><span class="icon is-large fas fa-2x"></span>
+        </a>
+        <a href="/dashboard/${member.id}/deleteStation/${station.id}" class="icon has-text-danger">
+          <i class="fas fa-trash"></i>
+        </a>
+      </div>
   </div>
   #{/if}
   #{else}
