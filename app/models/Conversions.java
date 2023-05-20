@@ -1,3 +1,11 @@
+/**
+ * This is the Conversions Class.
+ * It maintains and handles all bespoke methods that convert Station Readings to
+ * custom return outputs
+ *
+ * @version (20th May 2023)
+ */
+
 package models;
 
 import java.lang.reflect.Array;
@@ -6,9 +14,18 @@ import java.util.List;
 
 public class Conversions {
 
+
+    //Default, empty constructor
     public Conversions(){
 
     }
+
+    /**
+     *  Int to Text conversion made to the Code field is done here
+     *
+     * @param number The method takes in 1 argument of int value
+     * @return     A String value is returned and passed into the dashboard.html file
+     */
 
     public static String convertWeatherCodeToText(int number) {
 
@@ -35,6 +52,13 @@ public class Conversions {
 
     }
 
+    /**
+     *  Int to Text conversion made to the Code field is done here
+     *
+     * @param weatherCode The method takes in 1 argument of int value
+     * @return     A String value is returned and passed into the Icon Class in the dashboard.html file
+     */
+
     public static String convertWeatherToIcon(int weatherCode) {
 
         switch (weatherCode) {
@@ -60,15 +84,35 @@ public class Conversions {
 
     }
 
-    public static double toTwoDecimalPlaces(double num){
+    /**
+     * Converts a double value to 1 decimal place
+     *
+     * @param num The method takes in 1 argument of double value
+     * @return     A double value is returned
+     */
+
+    public static double toOneDecimalPlaces(double num){
         return (int) (num *100 ) /100;
     }
 
+    /**
+     * Converts a temp reading from Celsius to Fahrenheit
+     *
+     * @param celsiusTemp The method takes in 1 argument of double value
+     * @return   A double value is returned
+     */
     public static double convertTemp(double celsiusTemp){
         double fahrenheitTemp;
         fahrenheitTemp =((celsiusTemp*9)/5)+32;
-        return toTwoDecimalPlaces(fahrenheitTemp);
+        return toOneDecimalPlaces(fahrenheitTemp);
     }
+
+    /**
+     *  Int to Text conversion made to the Temp,Wind, Pressure field is done here
+     *
+     * @param trend The method takes in 1 argument of String value
+     * @return     A String value is returned and passed into the Icon Class in the dashboard.html file
+     */
 
     public static String convertTrendToIcon(String trend)
     {
@@ -85,6 +129,13 @@ public class Conversions {
 
         return "fa-solid fa-circle-exclamation";
     }
+
+    /**
+     *  Converts a wind speed value to a Beaufort Index
+     *
+     * @param windSpeed The method takes in 1 argument of double value
+     * @return     An Int value is returned which is then used in the convertBFTCodeToText() method
+     */
 
     public static int convertWindSpeedToBeaufortIndex(double windSpeed) {
 
@@ -146,6 +197,13 @@ public class Conversions {
         }
     }
 
+    /**
+     * Converts a Beaufort Index value to a String value
+     *
+     * @param bftCode The method takes in 1 argument of Int value
+     * @return     A String value is returned which is then passed into the dashboard.html file
+     */
+
     public static String convertBFTCodeToText(int bftCode) {
 
         switch (bftCode) {
@@ -178,11 +236,27 @@ public class Conversions {
         }
     }
 
+    /**
+     * Calculates wind chill from 2 double values, Celsius temperature and WindSpeed
+     *
+     * The method takes in 2 arguments of double value
+     * @param celsiusTemp
+     * @param windSpeed
+     * @return   A double value is returned
+     */
+
     public static double calculateWindChill(double celsiusTemp, double windSpeed){
         double windChill;
         windChill = 13.12 +0.6215*(celsiusTemp)-11.37*Math.pow(windSpeed,0.16)+0.3965*(celsiusTemp*Math.pow(windSpeed,0.16));
-        return toTwoDecimalPlaces(windChill);
+        return toOneDecimalPlaces(windChill);
     }
+
+    /**
+     * Converts a Wind Direction value to a String value
+     *
+     * @param windDirection The method takes in 1 argument of Int value
+     * @return     A String value is returned which is then passed into the dashboard.html file
+     */
 
     public static String convertWindDirectionToText(double windDirection) {
 
@@ -257,6 +331,5 @@ public class Conversions {
         }
 
     }
-
 
 }

@@ -1,3 +1,10 @@
+/**
+ * This is the Start Control Class.
+ * It maintains the start.html file i.e. homepage
+ *
+ * @version (20th May 2023)
+ */
+
 package controllers;
 
 import play.Logger;

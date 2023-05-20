@@ -1,3 +1,10 @@
+/**
+ * This is the About Control Class.
+ * It maintains the about.html file
+ *
+ * @version (20th May 2023)
+ */
+
 package controllers;
 
 import play.*;

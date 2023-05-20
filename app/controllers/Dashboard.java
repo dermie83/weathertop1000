@@ -1,3 +1,10 @@
+/**
+ * This is the Dashboard Control Class.
+ * It maintains and enables the dashboard.html file display Stations and their latest Readings
+ *
+ * @version (20th May 2023)
+ */
+
 package controllers;
 import java.util.Collections;
 import java.util.Comparator;

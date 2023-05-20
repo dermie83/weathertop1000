@@ -1,3 +1,10 @@
+/**
+ * This is the Accounts Control Class.
+ * It maintains and enables the user to log into their account via the signup.html file and login.html file.
+ *
+ * @version (20th May 2023)
+ */
+
 package controllers;
 
 import models.Member;

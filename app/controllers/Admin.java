@@ -1,3 +1,10 @@
+/**
+ * This is the Admin Control Class.
+ * It maintains and enables the admin.html file display all the station readings from the database
+ *
+ * @version (20th May 2023)
+ */
+
 package controllers;
 
 import java.text.SimpleDateFormat;

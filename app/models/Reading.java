@@ -1,3 +1,10 @@
+/**
+ * This is the Reading Class. It maintains a collection of readings.
+ * The Reading object has 6 fields in its constructor, code, temp, wind speed, wind direction, pressure, timestamp
+ *
+ * @version (20th May 2023)
+ */
+
 package models;
 
 import javax.persistence.Entity;

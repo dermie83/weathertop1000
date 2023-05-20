@@ -1,3 +1,11 @@
+/**
+ * This is the Member Class. It maintains a collection of Members, their stations and readings.
+ * The Member object is created by 4 fields firstname, lastname, email, password.
+ * A one-to-many relationship, in the database, between the Member Class and Station Class is created here.
+ *
+ * @version (20th May 2023)
+ */
+
 package models;
 
 import play.db.jpa.Model;

@@ -1,3 +1,10 @@
+/**
+ * This is the Station Control Class.
+ * It maintains and enables the station.html file display the station readings
+ *
+ * @version (20th May 2023)
+ */
+
 package controllers;
 
 import play.Logger;
