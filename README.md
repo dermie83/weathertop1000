@@ -7,5 +7,5 @@ Website: https://weathertopapp.cleverapps.io/
 
 
 What the application does:
-The application was developed by WeatherTop Inc. It allows a user to record meteorological readings that are then displayed to a dashboard. The dashboard gives a summary of the weather readings from relevant weather stations with added features such as weather trends and max & min readings.
+The application was developed by WeatherTop Inc. It allows a user to record meteorological readings that are then displayed to a dashboard. The dashboard gives a summary of the users/members weather readings from their weather stations with added features such as weather trends and max & min readings.
 

@@ -1,7 +1,7 @@
 /**
  * This is the Conversions Class.
  * It maintains and handles all bespoke methods that convert Station Readings to
- * custom return outputs
+ * return outputs where appropriate in the application
  *
  * @version (20th May 2023)
  */
@@ -108,7 +108,7 @@ public class Conversions {
     }
 
     /**
-     *  Int to Text conversion made to the Temp,Wind, Pressure field is done here
+     * String to String Conversion are executed here for the Temp,Wind, Pressure fields
      *
      * @param trend The method takes in 1 argument of String value
      * @return     A String value is returned and passed into the Icon Class in the dashboard.html file
@@ -147,21 +147,17 @@ public class Conversions {
         {
             return 1;
         }
-        else if ((windSpeed > 1) && (windSpeed <= 5))
+        else if ((windSpeed > 5) && (windSpeed <= 11))
         {
             return 2;
         }
-        else if ((windSpeed > 5) && (windSpeed <= 11))
+        else if ((windSpeed > 11) && (windSpeed <= 19))
         {
             return 3;
         }
-        else if ((windSpeed > 11) && (windSpeed <= 19))
-        {
-            return 4;
-        }
         else if ((windSpeed > 19) && (windSpeed <= 28))
         {
-            return 5;
+            return 4;
         }
         else if ((windSpeed > 28) && (windSpeed <= 38))
         {
